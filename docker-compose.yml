@@ -1,0 +1,18 @@
+version: '2'
+services:
+  smartboxapp:
+    build: ./smartboxapp
+    links:
+      - sonosapi
+    volumes:
+      - './data:/usr/src/app/SmartBoxApp/static/data' 
+    ports:
+        - "80:80"
+    restart: always
+    command: npm start &&
+  sonosapi:
+    build: ./sonosapi
+    ports:
+        - "5005:5005"
+    restart: always
+    command: npm start
