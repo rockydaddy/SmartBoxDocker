@@ -7,7 +7,7 @@ SmartBoxDocker requires [Docker](https://www.docker.com/) .
   - Download this app repository
 ```sh
 $ git clone https://github.com/rockydaddy/SmartBoxDocker.git
-```sh
+```
   - Update the Sonos and the RC433 configuration an to point to the API Server addresses (use a text editor of your choice, here it's vi)
 ```sh
 $ vi ./data/sonosConfig.js
