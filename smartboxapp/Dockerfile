@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 #Tools und Updates
 RUN ["apt-get", "update"]
 #RUN ["apt-get", "install", "-y", "vim"]
-RUN ["apt-get", "install", "-y", "git"]
+RUN ["apt-get", "install", "-y", "git-core"]
 # Hole Node App aus meinem Git Repo
 RUN git clone https://github.com/rockydaddy/SmartBoxApp.git
 # Wechsle Pfad
