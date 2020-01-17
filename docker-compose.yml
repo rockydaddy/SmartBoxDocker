@@ -5,7 +5,7 @@ services:
     links:
       - sonosapi
     volumes:
-      - './data:/usr/src/app/SmartBoxApp/static/data' 
+      - './smartboxapp/data:/usr/src/app/SmartBoxApp/static/data' 
     ports:
         - "80:80"
     restart: always
@@ -21,7 +21,7 @@ services:
     restart: always
     network_mode: host
     volumes:
-      - ./config:/homebridge
+      - './homebridge/config:/homebridge'
     environment:
       - PGID=1000
       - PUID=1000
